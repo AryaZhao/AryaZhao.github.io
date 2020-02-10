@@ -3,11 +3,114 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galaxy Orbit Clock</title>
-    <style> body {padding: 0; margin: 0;} </style>
-    <script src="p5.js"></script>
-    <script src="sketch.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384- GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text&display=swap" rel="stylesheet">
+    <title>Arya Lingyu Zhao</title>
+    <style> 
+      body {
+        font-family: 'Crimson Text', serif;
+        background-color:rgb(225,225,225);
+        padding-top: 5%;
+      } 
+      h3{
+        text-align: center;
+      }
+      #logos{
+        text-align: center;
+      }
+      .logo{
+        width: 20px;
+        margin: 20px;
+      }
+      h2, h4, h5{
+        text-align: center;
+        line-height: normal;
+      }
+      #headshot{
+        margin-left: 10%;
+        margin-bottom: 10%;
+        width: 80%;
+        border-radius: 50%;
+      }
+      img.project{
+        width: 20%;
+      }
+      div.projects{
+        padding-left: 10%;
+      }
+      div.project{
+        margin-bottom: 20%;
+        margin-right: 10%;
+      }
+      </style>
   </head>
   <body>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-md-4'>
+          <img id='headshot' src='images/arya.jpg'>
+          <h2>Arya Lingyu Zhao</h2>
+          <h5>CS enthusiast, flutist, Broadway fan</h5>
+          <h5>B.S. Computer Science <br>Columbia University<br>
+            Graduating in May 2021</h5>
+
+          <div id = 'logos'>
+            <a href="mailto:lingyu.zhao@columbia.edu"><img class = 'logo' src='images/icons8-email-96.png'></a>
+            <a href="https://www.linkedin.com/in/arya-lingyu-zhao"><img class = 'logo' src='images/icons8-linkedin-96.png'></a>
+            <a href="https://github.com/AryaZhao"><img class = 'logo' src='images/icons8-github-90.png'></a>
+          </div>
+        </div>
+
+        <div class='col-md-8 projects'>
+          <div class='row'>
+          <div class='col-md-6'>
+            <div class='project'>
+              <a href="https://chrome.google.com/webstore/detail/year%2B%2B/iohgcjalmalbppjjohhfhnhmbmdcaedl">
+                <h4>Year ++</h4></a>
+                <p>A <b>published</b> chrome extension integrated with Facebook birthday page and Google Calendar.  
+                  Written in <b>JavaScript, HTML, CSS and Bootstrap</b>.
+                  <a href="https://github.com/AbbyLuHui/Bday">
+                    Code</a>
+                </p>
+                  
+            </div>
+
+            <div class='project'>
+              <a href="https://docs.google.com/presentation/d/1yHjRatAzQeSdUgCsC0u8wsr5iq5tIg9l-LlfbxX5zRg/edit#slide=id.g7cf13c0e58_0_7">
+                <h4>Creative Clock<br><small>(Top 5% in class)</small></h4></a>
+                <p>Scroll down ↓ ↓ ↓ Written in <b>JavaScript, p5.js, HTML</b></p>
+              
+            </div>
+
+          </div>
+
+          <div class='col-md-6'>
+            <div class='project'>
+              <a href="https://github.com/AryaZhao/TransferLink">
+                <h4>TransferLink</h4></a>
+                <p>A social network web app to help transfer students integrate into new school.
+                  Implemented in <b>Python, Flask, PostgreSQL, Google Compute Engine</b>.
+                </p>
+            </div>
+
+            <div class='project'>
+              <a href="https://github.com/AryaZhao/Best-Medical-Hack-HackCooper2019/blob/master/cognate_demo.mp4">
+                <h4>Cognate<br><small>(Best Medical Hack @HackCooper)</small></h4></a></a>
+                <p>A mobile app prototype to self-diagnose dementia. 
+                  Used <b>Google Cloud AutoML and Adobe XD</b>.
+                </p>
+            </div>
+          </div>
+
+        </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <script src="p5.js"></script>
+    <!-- <script src="sketch-text.js"></script> -->
+    <script src="sketch.js"></script>
   </body>
 </html>

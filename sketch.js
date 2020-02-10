@@ -1,11 +1,8 @@
 function setup() {
-	createCanvas(800,600,WEBGL);
+	createCanvas(windowWidth, 600,WEBGL);
   }
   
-  function draw() {
-	  if (second() == 0){
-			print(minute());
-	  }
+function draw() {
 	  background(225);
 	  noFill();
 	  strokeWeight(5);
@@ -16,4 +13,4 @@ function setup() {
 	  arc(0, 0, 300, 300, -HALF_PI, -HALF_PI+TWO_PI*minute()/60);
 	  rotateY(3*millis() / 1000);
 	  arc(0, 0, 450, 450, -HALF_PI, -HALF_PI+TWO_PI*second()/60);
-	}
+ }
